@@ -81,8 +81,9 @@ function completedTask(num) {
 
 function deleteTask(num) {
     const i = parseInt(num)
+    const name = todoList[i].name
 
     todoList.splice(i, 1)
-    console.log('Deleted "' + todoList[i].name + '"');
+    console.log("Deleted" + "\"" + name + "\"");
 }
 
